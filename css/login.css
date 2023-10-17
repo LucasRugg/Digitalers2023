@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #007a33;
+    --secondary-color: #fcbc54;
+    --terciary-color: #ffffff;
+    --text-custom-light: #ebe5e5;
+  }
+  body{
+    background-image: url(https://pbs.twimg.com/media/FTfBJ-JXoAAOyBA.jpg:large);
+    background-size: cover;
+    background-position: center;
+  }
+.login-container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.card{
+    border: 5px solid var(--primary-color);
+    
+}

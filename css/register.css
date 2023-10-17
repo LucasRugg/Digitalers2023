@@ -1,0 +1,44 @@
+:root {
+  --primary-color: #007a33;
+  --secondary-color: #fcbc54;
+  --terciary-color: #ffffff;
+  --text-custom-light: #ebe5e5;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(https://i.pinimg.com/originals/ad/a2/87/ada287e34e1a565309da252d5429e0e1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-form-container {
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--terciary-color);
+  border: 10px solid var(--secondary-color);
+  border-radius: 15px;
+  position: relative;
+}
+.boton-register {
+  padding: 15px;
+  position: absolute;
+  top: -25px;
+  left: 220px;
+  font-family: "Roboto", sans-serif;
+  border: 5px solid var(--secondary-color);
+  font-size: 17px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    #007a33 0%,
+    #00b458 50%,
+    #00d07f 100%
+  );
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (width < 1024px) {
+  .boton-register {
+    display: none;
+  }
+}

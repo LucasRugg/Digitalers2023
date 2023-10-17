@@ -1,0 +1,55 @@
+:root {
+  --primary-color: #007a33;
+  --secondary-color: #fcbc54;
+  --terciary-color: #ffffff;
+  --text-custom-light: #ebe5e5;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(https://i.pinimg.com/originals/93/73/00/937300d69e2a169bfc79c70456888072.jpg);
+  background-size: cover;
+  background-position: center;
+    
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  height: 200px;
+}
+.avatar img {
+  max-height: 100px;
+  max-width: 150px;
+  border-radius: 5%;
+  margin: 5px;
+}
+.monumento img {
+  max-height: 150px;
+  max-width: 120px;
+  border-radius: 5%;
+  margin: 5px;
+}
+.programacion img {
+  max-height: 150px;
+  max-width: 120px;
+  border-radius: 5%;
+  margin: 5px;
+}
+
+@media screen and (width > 1024px) {
+  .main-container {
+    margin: 0 auto;
+    background-color: #ebe5e5;
+  }
+  .about-me {
+    height: 150px;
+  }
+}

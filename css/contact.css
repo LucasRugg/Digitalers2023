@@ -1,0 +1,36 @@
+:root {
+  --primary-color: #007a33;
+  --secondary-color: #fcbc54;
+  --terciary-color: #ffffff;
+  --text-custom-light: #ebe5e5;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.map-container {
+  display: flex;
+}
+.contact-map {
+  min-height: 400px;
+  width: 100%;
+}
+.contact-form-container {
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--terciary-color);
+  border: 1px solid var(--secondary-color);
+}
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}

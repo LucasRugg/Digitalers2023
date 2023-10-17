@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #007a33;
+    --secondary-color: #fcbc54;
+    --terciary-color: #ffffff;
+    --text-custom-light: #ebe5e5;
+  }
+.btn{
+    background-color: var(--primary-color);
+    color: var(--terciary-color);
+    border: var(--primary-color);
+
+}
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: black;
+}
+.table-image img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.table-title {
+    font-weight: bold;
+}
+
+.table-description {
+    font-size: .875rem;
+    font-family: monospace
+}
+.table-price {
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+}

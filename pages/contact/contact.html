@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto:ital@0;1&family=Ysabeau+SC:wght@500&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="navbar navbar-expand-md main-navbar" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="main-logo" src="/assets/images/logo.png" alt="" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="main-menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/pages/contact/contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/about-us/about-us.html">Nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/register/register.html">Registro</a>
+            </li>
+          </ul>
+          <div class="header-user">
+            <div class="header-user">
+
+              <div id="userHeaderName"></div>
+              <div id="userAction"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="main-container container-xl contact-wrapper">
+
+    <section class="contact-container row g-0 my-5">
+
+      <div class="col-12 col-lg-6">
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <div class="mb-3">
+              <label for="fullname" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Bill Russell" required
+                minlength="5" maxlength="60">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email </label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Larry@Bird.com" required
+                minlength="5" maxlength="100" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]+$">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Deja tu comentario</label>
+              <textarea class="form-control" name="message" id="message" rows="3" placeholder="Hola, soy Jason Tatum..."
+                required minlength="10" maxlength="500"></textarea>
+              <div>
+                <button type="submit" class="btn btn-dark my-1">Enviar</button>
+              </div>
+
+
+
+            </div>
+          </form>
+
+
+
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 map-container">
+        <div class="contact-map">
+
+          <iframe class="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.889319082115!2d-71.062146!3d42.366198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3708e162d05cb%3A0x32d335fe5ed797a8!2sTD%20Garden!5e0!3m2!1ses!2sar!4v1692555041383!5m2!1ses!2sar"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+
+
+
+
+
+
+  <footer class="main-footer">
+
+
+    <section class="footer-section ">
+      <ul class="footer-social">
+        <li> <a href=""><i class="fa-brands fa-instagram"></i></a> </li>
+        <li> <a href=""><i class="fa-brands fa-linkedin"></i></a> </li>
+        <li> <a href=""><i class="fa-brands fa-github"></i></a> </li>
+
+
+      </ul>
+    </section>
+    <section class="footer-section">
+      <img class="footer-logo" src="/assets/images/logo.png" alt="" />
+    </section>
+    <section class="footer-section footer-description">
+      <h6>Boston Celtics Store</h6>
+      <h6>Direccion: Av. Siempreviva 2020</h6>
+      <h6>Lunes a Viernes</h6>
+      <h6>09:00 a 20:00</h6>
+    </section>
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="/js/userInfo.js"></script>
+</body>
+
+</html>
