@@ -1,10 +1,10 @@
-const productos = [
+const productosPrimerInicio = [
     {
         id:"3b27db03-a9f6-49c5-948e-b6f880b5b19e",
       titulo: "Camiseta Oficial",
       precio: 50.99,
       nombreJugador: "Jayson Tatum",
-      categoria: "Ropa",
+      categoria: "Camisetas",
       descripcion: "Camiseta oficial de los Boston Celtics con el nombre de Jayson Tatum.",
       imagen: "https://images.footballfanatics.com/boston-celtics/mens-jordan-brand-jayson-tatum-black-boston-celtics-authentic-player-jersey-statement-edition_ss5_p-4765326+u-jynw2flqgbvgnikrpkpg+v-maumj3nufm9t048n2tlr.jpg?_hv=2&w=340"
     },
@@ -13,7 +13,7 @@ const productos = [
       titulo: "Camiseta Replica",
       precio: 39.99,
       nombreJugador: "Jaylen Brown",
-      categoria: "Ropa",
+      categoria: "Camisetas",
       descripcion: "Réplica de la camiseta de los Boston Celtics con el nombre de Jaylen Brown.",
       imagen: "https://images.footballfanatics.com/boston-celtics/mens-fanatics-branded-jaylen-brown-black-boston-celtics-fast-break-replica-player-jersey-statement-edition_pi4793000_ff_4793073-0690e3523f7accbb7bc7_full.jpg?_hv=2&w=340"
     },
@@ -22,7 +22,7 @@ const productos = [
       titulo: "Shorts Oficiales",
       precio: 34.99,
       nombreJugador: "Kemba Walker",
-      categoria: "Ropa",
+      categoria: "Shorts",
       descripcion: "Shorts oficiales de los Boston Celtics con el nombre de Kemba Walker.",
       imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfHZqgHfx3hicTh4LJf2NeUvLokEbQXa81Ng&usqp=CAU"
     },
@@ -31,7 +31,7 @@ const productos = [
       titulo: "Shorts de Entrenamiento",
       precio: 29.99,
       nombreJugador: "Marcus Smart",
-      categoria: "Ropa",
+      categoria: "Shorts",
       descripcion: "Shorts de entrenamiento de los Boston Celtics con el nombre de Marcus Smart.",
       imagen: "https://ejemplo.com/shorts-smart.jpg"
     },
@@ -42,7 +42,12 @@ const tableBody = document.getElementById("table-body");
 const inputFiltrar = document.getElementById("filtrar");
 const btn = document.querySelector('button.btn[type="submit"]');
 let idEditar;
+let productos = JSON.parse(localStorage.getItem("productos")) || productosPrimerInicio;
 
+if (JSON.parse(localStorage.getItem("productos")) === null) {
+  localStorage.setItem("productos", JSON.stringify(productos));
+  
+}
 
 pintarProductos(productos);
 
@@ -92,6 +97,7 @@ formProducto.addEventListener('submit',(e) => {
       })
 
     pintarProductos(productos);
+    localStorage.setItem("productos",JSON.stringify(productos));
     formProducto.reset();
 })
 
@@ -177,5 +183,7 @@ function borrarProducto(idRecibido){
  })
  productos.splice(indiceEncontrado,1);
  pintarProductos(productos);
+ localStorage.setItem("productos",JSON.stringify(productos));
+ Swal.fire('Borrado!', 'Producto borrado correctamente', 'success');
 
 }

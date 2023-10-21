@@ -136,8 +136,12 @@ body {
 }
 .card-header {
   position: relative;
+  overflow: hidden;
 }
-
+.img-producto{
+  min-height: 340px;
+  min-width: 340px;
+}
 .card-img-info {
   position: absolute;
   bottom: 2em;
@@ -262,4 +266,8 @@ a{
   text-decoration: none;
   color: var(--primary-color);
   font-size: large;
+}
+
+#admin{
+  display: flex;
 }
