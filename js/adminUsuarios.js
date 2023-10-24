@@ -34,7 +34,7 @@ const tableBody = document.getElementById("table-body");
 const inputFiltrar = document.getElementById("filtrar");
 const btn = document.querySelector('button.btn[type="submit"]');
 let idEditar;
-let usuarios = JSON.parse(localStorage.getItem("usuarios")) || userInicio;
+let usuarios = JSON.parse(localStorage.getItem("users")) || userInicio;
 
 if (JSON.parse(localStorage.getItem("usuarios")) === null) {
   localStorage.setItem("usuarios", JSON.stringify(usuarios));
@@ -139,7 +139,7 @@ function borrarUsuario(idRecibido){
  })
  usuarios.splice(indiceEncontrado,1);
  pintarUsuarios(usuarios);
- localStorage.setItem("usuarios",JSON.stringify(usuarios));
+ localStorage.setItem("users",JSON.stringify(usuarios));
  Swal.fire('Borrado!', 'Usuario borrado correctamente', 'success');
 
 }

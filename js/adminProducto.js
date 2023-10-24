@@ -51,9 +51,10 @@ if (JSON.parse(localStorage.getItem("productos")) === null) {
 
 pintarProductos(productos);
 
+
 formProducto.addEventListener('submit',(e) => {
     e.preventDefault();
-    console.log(e)
+   
 
     let id;
 

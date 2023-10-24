@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto</title>
+  <title>Registro</title>
 
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -73,7 +73,7 @@
 
       <div class="col-12 col-lg-6">
         <div class="contact-form-container">
-          <form class="contact-form">
+          <form id="formRegistro" class="contact-form">
             <span class="boton-register">REGISTRO</span>
             <div class="mb-3">
               <label for="fullname" class="form-label">Nombre Completo</label>
@@ -83,7 +83,7 @@
             <div class="mb-3">
               <label for="email" class="form-label">Email </label>
               <input type="email" name="email" class="form-control" id="email" placeholder="Larry@Bird.com" required
-                minlength="5" maxlength="100" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]+$">
+                minlength="5" maxlength="100" pattern="[A-Za-z0-9._+\-']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$">
             </div>
             <div class="mb-3">
               <label for="password" class="form-label">Contraseña</label>
@@ -95,39 +95,7 @@
               <input type="password" class="form-control" id="repeatPassword" name="repeatPassword" placeholder="*****"
                 required minlength="5" maxlength="20">
             </div>
-            <div class="mb-3">
-              <label for="birthDate" class="form-label">Fecha de Nacimiento</label>
-              <input type="date" class="form-control" id="birthDate" name="birthDate">
-            </div>
-            <div class="mb-3">
-              <label for="province" class="form-label">Provincia</label>
-              <select class="form-select" id="province" name="province">
-                <option value="Buenos Aires">Buenos Aires</option>
-                <option value="Buenos Aires Capital">Buenos Aires Capital</option>
-                <option value="Catamarca">Catamarca</option>
-                <option value="Chaco">Chaco</option>
-                <option value="Chubut">Chubut</option>
-                <option value="Cordoba">Cordoba</option>
-                <option value="Corrientes">Corrientes</option>
-                <option value="Entre Rios">Entre Rios</option>
-                <option value="Formosa">Formosa</option>
-                <option value="Jujuy">Jujuy</option>
-                <option value="La Pampa">La Pampa</option>
-                <option value="La Rioja">La Rioja</option>
-                <option value="Mendoza">Mendoza</option>
-                <option value="Misiones">Misiones</option>
-                <option value="Neuquen">Neuquen</option>
-                <option value="Rio Negro">Rio Negro</option>
-                <option value="Salta">Salta</option>
-                <option value="San Juan">San Juan</option>
-                <option value="San Luis">San Luis</option>
-                <option value="Santa Cruz">Santa Cruz</option>
-                <option value="Santa Fe">Santa Fe</option>
-                <option value="Santiago del Estero">Santiago del Estero</option>
-                <option value="Tierra del Fuego">Tierra del Fuego</option>
-                <option value="Tucuman">Tucuman</option>
-              </select>
-            </div>
+
 
 
             <button type="submit" class="btn btn-dark my-1">Enviar</button>
@@ -172,9 +140,11 @@
     </div>
   </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="/js/userInfo.js"></script>
+<script src="/js/registro.js"></script>
 </body>
 
 </html>
